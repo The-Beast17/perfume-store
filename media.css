@@ -79,29 +79,143 @@ nav i{
      margin: 0 auto;
     }
 
-    /**********page 3 ********/
-    .page4 .heading{
+    /*page4*********/
+    .page4 .content {
+        flex-direction : column;
+    }
+    .page4 .content .left{
+         width : 100%;
+         height : 60%;
+    }
+    .page4 .content .left h1{
+        font-size:14.3vw;
+    }
+    
+    .page4 .content .right .empty{
+        height : 15%;
+
+    }
+
+ 
+    .page4:hover  .content .left h1:last-child{
+    transform: translate(-50% ,310%);   
+    }
+    .page4:hover .content .left h1:first-child{
+        transform: translate(-50% ,100%);   
+    }
+    .page4:hover .content .left h1:nth-child(2){
+        transform: translate(-50%, 200%);   
+    }
+
+    .page4 .content .right{
+         width : 100%;
+         height : 40%;
+         display: flex;
+         align-items: center;
+    }
+    
+    .page4 .content .right .empty{
+        display: none;
+    }
+
+    .page4 .content .right-up{
+        width : 50%;
+        height : 100%;
+        justify-content: end;
+    }
+    .page4 .right .right-up img{
+       width :80%;
+    }
+    .page4 .content .right-down{
+        height : 100%;
+        width : 50%;
+        flex-direction: column;        
+    }
+    .page4 .content .right-down .circle{
+         height : 17vw;
+         width : 17vw;
+    }
+    .page4 .content .right-down .circle h1{
+        font-size : 4vw;
+    }
+    .page4 .content .right-down .circle i{
+        font-size : 1.3vw;
+    }
+
+    
+    .page4 .right .right-down .rating h4{
+        font-size : 2.8vw;
+        padding-left : 2vw;
+    }
+        
+    .page4 .right .right-down .rating i{
+        font-size : 1.7vw;
+        margin : 0.8vw;
+    }
+    .page4 .right .right-down .rating{
+        width: 100%;
+        height : 60%;
+    }
+
+    .page4 .right .right-down .rating .rat-box{
+      margin : 1.4vw;
+    }
+
+    .page4 .right .right-down .rating .stars{
+        display: flex;
+    }
+
+
+    /**********page 5 ********/
+    .page5 .heading{
         padding : 9.5vh 0;
         font-size: 14vw;
     }
 
-    .page4 .scroll-bar .content{
+    .page5 .scroll-bar .content{
          height : 40vh;
          width : 25vh;
     }
-    .page4 .scroll-bar .content h1{
+    .page5 .scroll-bar .content h1{
          font-size: 3vh;
     }
-    .page4 .scroll-bar .content p{
+    .page5 .scroll-bar .content p{
          font-size: 1.3vh;
     }
-    .page4 .scroll-bar .content h4{
+    .page5 .scroll-bar .content h4{
          font-size: 1.9vh;
     }
-    .page4 .scroll-bar .content button{
+    .page5 .scroll-bar .content button{
          font-size: 1.6vh;
          margin : 0.6vh;
     }
+
+    /*footer******/
+
+    footer {
+        padding : 3vw 4vw;
+    }
+
+    footer .content{
+       flex-wrap: wrap;
+       justify-content: space-between;
+       padding : 2vw 8vw;
+    }
+    footer .content .content-box{
+       width : 45%;
+    }
+    footer h3{
+        font-size: 3vw;
+    }
+    footer a{
+        font-size: 2.8vw;
+    }
+    footer p{
+        font-size: 2.7vw;
+        line-height:3.4vw; ;
+    }
+
+    
 
 
 }
